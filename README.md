@@ -30,13 +30,23 @@ Hand tune optimization?
 If we look at se.s (gcc -S se.c) lines 52 to 61, we can easily spot that lines 53 and 54 are redundant. Removing them may result in 25% time saving, at least theoretically!! This is what we hope to achieve by making EAX=TOS.
 
 https://github.com/udexon/5CSM/blob/master/se.s
+
 call	s_strcspn
+
 movl	%eax, -284(%rbp)
+
 movl	-284(%rbp), %eax
+
 subl	$1, %eax
+
 movslq	%eax, %rdx
+
 movq	-280(%rbp), %rcx
+
 leaq	-272(%rbp), %rax
+
 movq	%rcx, %rsi
+
 movq	%rax, %rdi
+
 call	strncpy@PLT
