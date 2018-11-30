@@ -697,7 +697,7 @@ code_\label :			// assembler code follows
 
 	defcode "RET",3,,RET
 	leave
-	ret			// drop top of stack
+	ret			
 	NEXT
 
 	defcode "SWAP",4,,SWAP
