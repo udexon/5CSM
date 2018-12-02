@@ -1,3 +1,4 @@
+```
 (gdb) r < jfc.f
 The program being debugged has been started already.
 Start it from the beginning? (y or n) y
@@ -29,3 +30,4 @@ Breakpoint 3, f_ret () at jonesforth9f.S:730
 #0  f_ret () at jonesforth9f.S:730
 #1  0xf7faa000 in ?? () from /lib/i386-linux-gnu/libc.so.6
 Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+```
