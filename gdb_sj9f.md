@@ -1,3 +1,12 @@
+The following is the gdb output for running sj9f, which was compiled using:
+```gcc -m32 -o sj9e sj.c jonesforth9e.S -g array.s```
+
+The files should be available in the project folder. If not, please message me.
+
+Main issue: before calling ```ret``` (line 729 [jonesforth9f.S](https://github.com/udexon/5CSM/blob/master/jonesforth9f.S)), I put a breakpoint and inspected with ```bt``` (see the end of the gdb output below), it showed that the frame is corrupted -- perhaps jonesforth corrupted EIP somewhere?
+
+As such, perhaps I need to create some Forth words for debugging? Any suggestion?
+
 ```
 (gdb) r < jfc.f
 The program being debugged has been started already.
