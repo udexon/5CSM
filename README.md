@@ -1,5 +1,4 @@
-# 5CSM
-5GL C Stack Machine (Fifth Generation Graph Language)
+### 5CSM: 5GL C Stack Machine (Fifth Generation Graph Language)
 
 jonesforth or similar Forth implementations primarily aim to implement a program (stack machine) to execute Forth words, with an architecture that is independent and unrelated to GNU C Compiler.
 
