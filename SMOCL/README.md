@@ -65,6 +65,6 @@ http://uwiki.strotmann.de/view/forth-implemented-in-cc
 
 Forth has such a long history that it would be unfair to say that a certain topic has not been documented. Yet some of the most important work and documentation predated the Internet. Although the number of programmers worldwide increased dramatically along with the growth the Internet and mobile phone usage, Forth popularity remained relatively low as younger programmers are seduced by "propaganda" accompanying the currently popular programming languages. In absolute terms, the number of Forth programmers worldwide might be increasing, as the older Forth programmers may not disappear so quickly, touch wood, we do not have sufficient statistics or mechanism to collect such statistics. 
 
-A new comer to Forth may find [jonesforth](https://github.com/nornagon/jonesforth/blob/master/jonesforth.S) the de facto introduction to Forth internals, which older Forthers have expressed their opinions concerning their preferences.
+A new comer to Forth may find [jonesforth](https://github.com/nornagon/jonesforth/blob/master/jonesforth.S) the de facto introduction to Forth internals, against which older Forthers have expressed their opinions concerning their preferences.
 
 A study of jonesforth and some C Forths given above, together with the [C calling jonesforth example](https://github.com/udexon/5CSM/blob/master/Progress_20181203.md) in this repository should give readers sufficient background knowledge to investigate SMOCL.
