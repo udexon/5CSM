@@ -20,9 +20,9 @@ LISP was ruled out in preference of RPN, initially simply due to a "nerdy" feel 
 
 Since July 2018, nSM evolved slowly, as I could only work on it during my spare time. It took about a year to reach its current "stable" form, after the fundamental data structures were simplified to their barest forms and conditional branches were implemented. It is now around 50 lines of PHP or JavaScript code, which mainly does 3 things: 
 
--- push input tokens on to the stack,
--- map input tokens to host functions (PHP or JavaScript) and
--- handles conditional branches.
+- pushes input tokens on to the stack,
+- maps input tokens to host functions (PHP or JavaScript) and
+- handles conditional branches.
 
 I was amazed how simple nSM has become, or perhaps I should say I am awed by the how simple a stack machine should be.
 
