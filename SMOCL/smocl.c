@@ -75,7 +75,7 @@ struct f_node *f_fillV(struct f_node *head);
 int SMOCL1a(int **A, int **B);
 int SMOCL1b(int *A, int *B);
 
-int FD() // use f_noded
+int FD() // use f_node
 {
 	headd=(struct f_node *) NULL;
 	f_display(headd);
