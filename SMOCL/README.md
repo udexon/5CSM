@@ -8,6 +8,10 @@ https://github.com/udexon/5CSM/blob/master/SMOCL/README.md
 
 ## What is NOT a stack machine?
 
+  - _ALL programs or functions can be represented as reverse Polish notation and executed by a stack machine._
+
+  - _The reverse Polish notation is simply THE simplest notation to represent ANYTHING mathematically._
+
 ### Introduction
 
 SMOCL is derived from the Multitiered Stack Machine (nSM) as described in:
@@ -176,7 +180,7 @@ The readers are invited to port nSM to other programming languages of your choic
 
 As veteran Forthers used to say, implementing Forth yourself is an eye opener. nSM is a light weight, modern approach to the same discipline as Forth. 
 
-When you actually do that, you will start to understand that the question "What is NOT a stack machine?" is not a sematic trick. It simply means all programs or functions can be represented as a stack machine. One of the proof being the x86 instruction set:
+When you actually do that, you will start to understand that the question "What is NOT a stack machine?" is not a sematic trick. It simply means **_all programs or functions can be represented as reverse Polish notation and executed by a stack machine_**. One of the proofs is the x86 instruction set:
 
 `sub %ah, %al` — AL is set to AL - AH
 
@@ -188,7 +192,7 @@ Then you might say there is "register machine", which can be transformed into a 
 
 Where does this lead us?
 
-Stack machine is only the portal into the bigger world of graph theory, which some believe to be the very foundation of mathematics.
+Stack machine is only the portal into the bigger world of graph theory, which some believe to be the very foundation of mathematics. **_The reverse Polish notation is simply the simplest notation to represent ANYTHING mathematically._**
 
 Consider the distributive law described in [this article](https://www.linkedin.com/pulse/learning-forth-2018-%E4%BC%8D%E6%A8%91%E7%9B%9B-%E5%8D%9A%E5%A3%AB-liang-ng-ph-d-/). How many lines of code would you need to implement the distributive law in other programming languages? The solution in RPN is almost trivial.
 
