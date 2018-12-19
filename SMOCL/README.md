@@ -138,7 +138,7 @@ In short SMOCL/nSM is a compiler / interpreter to translate Forth-like (RPN) pro
 Currently, [SMOCL stack machine functions `f_*()`](https://github.com/udexon/5CSM/blob/master/SMOCL/smocl.c) (line 78) are invoked using plain C syntax, as the RPN parser is being developed:
 
 ```
-int FD() // use f_noded
+int FD() // use f_node
 {
 	headd=(struct f_node *) NULL;
 	f_display(headd);
