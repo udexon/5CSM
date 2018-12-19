@@ -163,3 +163,30 @@ Here are several areas concerning the differences of C programs vs. Forth progra
 As such, Forth code optimization is a manual process, while C code optimization is a black box, automated process based on algorithms written by compiler developers.
 
 SMOCL or 5CSM can make C code optimization a manual process like Forth, opening up the black art of code optimization to a wider audience.
+
+
+### What is NOT a stack machine?
+
+The readers are invited to port nSM to other programming languages of your choice or work together to build SMOCL / 5CSM. 
+
+As veteran Forthers used to say, implementing Forth yourself is an eye opener. nSM is a light weight, modern approach to the same discipline as Forth. 
+
+When you actually do that, you will start to understand that the question "What is NOT a stack machine?" is not a sematic trick. It simply means all programs or functions can be represented as a stack machine. One of the proof being the x86 instruction set:
+
+`sub %ah, %al` — AL is set to AL - AH
+
+which of course dated back to the old days of stack machine architecture of the 1960s.
+
+In modern Intel or ARM microprocessors, there is this "virtually undocumented" proprietary "stack engine", which outside mortals like us can only assume they are stack machines.
+
+Then you might say there is "register machine", which can be transformed into a stack machine almost trivially.
+
+Where does this lead us?
+
+Stack machine is only the portal into the bigger world of graph theory, which some believe to be the very foundation of mathematics.
+
+Consider the distributive law described in [this article](https://www.linkedin.com/pulse/learning-forth-2018-%E4%BC%8D%E6%A8%91%E7%9B%9B-%E5%8D%9A%E5%A3%AB-liang-ng-ph-d-/). How many lines of code would you need to implement the distributive law in other programming languages? The solution in RPN is almost trivial.
+
+[HOL Light](https://www.cl.cam.ac.uk/~jrh13/hol-light/), based on LISP, is another good point of entry to the abstract world of mathematics. However, I believe Forth and RPN, which are homoiconic as with LISP, are closer to hardware, and thus more appealing to some programmers like myself. In any case, when you understand the fundamentals of stack machine, which I think you can achieve in one week by following examples given here, the differences between LISP and RPN are trivial, as there are more interesting problems to pursue.
+
+(Additional references: [SageMath](http://www.sagemath.org/), [Python Sympy](https://www.sympy.org/en/index.html), [Maxima](http://maxima.sourceforge.net/).)
