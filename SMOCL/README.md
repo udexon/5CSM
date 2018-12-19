@@ -124,3 +124,13 @@ struct f_node *f_push(struct f_node *headd, union body *b, int type)
     return headp;
 }
 ```
+
+Readers who are familiar with Forth written in C may ask -- are you reinventing the wheel?
+
+Yes and No. Most of the C Forth systems that I have reviewed seems to have one common goal: to execute Forth programs (in RPN).
+
+However, as stated above, nSM has a different goal: to map 5GL functions (equivalent to Forth words) to native C functions.
+
+Then some readers may ask: can that not be done in any of the C Forth? Perhaps, but I suspect additional data structure might hinder this objective.
+
+In short SMOCL/nSM is a compiler / interpreter to translate Forth-like (RPN) programs into native C functions.
