@@ -68,3 +68,59 @@ Forth has such a long history that it would be unfair to say that a certain topi
 A new comer to Forth may find [jonesforth](https://github.com/nornagon/jonesforth/blob/master/jonesforth.S) the de facto introduction to Forth internals, against which older Forthers have expressed their opinions concerning their preferences.
 
 A study of jonesforth and some C Forths given above, together with the [C calling jonesforth example](https://github.com/udexon/5CSM/blob/master/Progress_20181203.md) in this repository should give readers sufficient background knowledge to investigate SMOCL.
+
+SMOCL began as an implementation of [nSM](http://5gl.epizy.com/nsm/fgl.html) in C, where the original ISYA (Inverse Shunting Yard Algorithm) was written in PHP. The first stumbling block would be the stack itself: in PHP, pushing a item on to the stack is simply `$S[] = 'a token';` . However, the following code is required in [SMOCL](https://github.com/udexon/5CSM/blob/master/SMOCL/linkedstack.c):
+
+```
+union body 
+{
+    void *p;
+    long int i;
+};
+
+struct f_node
+{
+    // int data; // data or pointer
+    union body b;
+    int type;
+    struct f_node *next;
+};
+
+/*
+    push an element onto stack
+*/
+struct f_node *f_push(struct f_node *headd, union body *b, int type)
+{
+
+//    struct f_node *tmp = (struct f_node *) malloc(sizeof(struct f_node));
+
+    struct f_node *headp = headd; // local write to pointer?
+    struct f_node *tmp;
+    // use extern
+    tmp = (struct f_node *) malloc(sizeof(struct f_node));
+
+    printf("\n   f_pushd 217 %p    ", tmp);
+
+    if(tmp == NULL)
+    {
+        exit(0);
+    }
+    
+    if (type==1) { printf("   f_pushd 224 %p    ", (*b).p);
+    
+	tmp->b = *b;
+    // tmp->b->p=malloc(strlen((*b).p)+1);
+    // strcpy(tmp->b->p, (*b).p); // cannot assign? must copy?
+    tmp->type=1;
+    }
+    else { // tmp->b->i = (*b).i;
+        tmp->b = *b;
+        printf("    f_pushd 233 i %d tmp b i %d __  ", (*b).i, tmp->b.i);
+        tmp->type=0;
+    }
+    
+    tmp->next = headp; // head was TOS, now tmp is TOS, head is NULL when it was sole item on stack?
+    headp = tmp; // headp destroyed upon exit? but value saved?
+    return headp;
+}
+```
