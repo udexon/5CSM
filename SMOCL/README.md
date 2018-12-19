@@ -14,7 +14,7 @@ https://github.com/udexon/5CSM/blob/master/SMOCL/README.md
 
 ### Introduction
 
-SMOCL is derived from the Multitiered Stack Machine (nSM) as described in:
+SMOCL (Stack Machine OpenCL) is derived from the Multitiered Stack Machine (nSM) as described in:
 
 https://www.linkedin.com/pulse/multitiered-stack-machine-nsm-using-5gl-fifth-graph-ng-ph-d-/
 
