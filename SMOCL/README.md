@@ -6,6 +6,8 @@ Here is my prototype for SMOCL (Stack Machine OpenCL) written in C:
 
 https://github.com/udexon/5CSM/blob/master/SMOCL/README.md
 
+### Introduction
+
 SMOCL is derived from the Multitiered Stack Machine (nSM) as described in:
 
 https://www.linkedin.com/pulse/multitiered-stack-machine-nsm-using-5gl-fifth-graph-ng-ph-d-/
@@ -52,3 +54,9 @@ The main motivation lies in mobile GPU cryptocurrency mining. By rejecting OpenC
 
 So the above is a long winded background to SMOCL. I believe it is necessary as the readers will discover as I explain SMOCL in depth.
 
+
+### Assembly Forth vs. C Forth
+
+Here is a link which I believe is one of the most important reference for non-Forth programmers to understand Forth: a collection of Forth systems written in C:
+
+http://uwiki.strotmann.de/view/forth-implemented-in-cc
