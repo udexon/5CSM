@@ -48,5 +48,7 @@ After about of year hanging out on comp.lang.forth, perhaps the last active Usen
 
 So non-Forth programmers may ask, am I wasting my time working on a programming language that seems to be poorly documented on critical areas, such as OpenCL?
 
+The main motivation lies in mobile GPU cryptocurrency mining. By rejecting OpenCL, Google has caused a huge unfortunate side effect -- tens of millions if not hundred of millions of Android mobile phone with GPU effectively become underutilized. SMOCL is a project to bridge the gap using stack machine methodologies, to utilize the hundred of millions of GPU in Android phones, especially for cryptocurrency mining.
+
 So the above is a long winded background to SMOCL. I believe it is necessary as the readers will discover as I explain SMOCL in depth.
 
