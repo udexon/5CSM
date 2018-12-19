@@ -151,3 +151,15 @@ int FD() // use f_node
 	headd=(struct f_node *) f_push(headd, &i, 0);
 	f_display(headd);
 ```
+
+Here are several areas concerning the differences of C programs vs. Forth programs:
+
+1. The stack machine mechanism in Forth makes it possible to create an interactive development environment. With SMOCL or 5CSM (5GL C Stack Machine), similar interactive development environment for C can be created, providing huge benefits to cryptocurrency as well as other applications.
+
+2. The reverse Polish notation can be used to create a Universal Stack Machine Language (USML) so as to unify all programming languages including C.
+
+3. The very core of GCC optimization engine is based on RTL, itself a stack machine. 
+
+As such, Forth code optimization is a manual process, while C code optimization is a black box, automated process based on algorithms written by compiler developers.
+
+SMOCL or 5CSM can make C code optimization a manual process like Forth, opening up the black art of code optimization to a wider audience.
