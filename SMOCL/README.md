@@ -38,7 +38,7 @@ I also coined the name Inverse Shunting Yard Algorithm (ISYA) to describe the op
 
 The version of RPN for nSM is called 5GL, the Fifth Generation Graph Language, as a pun to Forth.
 
-Besides "unifying" all programming languages, 5GL may also serve as a platform for "stack machine opcode interchange" (SMOPINT) -- as most popular programming languages today actually employ stack machine as interpreter. Is it possible to create a translation layer so that stack machine opcodes (SMOP) in one programming language (e.g. PHP) can be executed by the interpreter of another programming language (e.g. JavaScript)?
+Besides "unifying" all programming languages, 5GL may also serve as a platform for "stack machine opcode interchange" (SMOPINT) -- as most popular programming languages today actually employ stack machine as interpreter: PHP, JavaScript, Java, Python, Ruby, .... Is it possible to create a translation layer so that stack machine opcodes (SMOP) in one programming language (e.g. PHP) can be executed by the interpreter of another programming language (e.g. JavaScript)? It does not seem to be an overtly complicated task after you spend a few days studying examples given in this article.
 
 SMOCL (Stack Machine OpenCL) illustrates some of the more urgent, practical and interesting issues concerning SMOPINT. These issues include: What are the essential differences between a Forth program and a C program?
 
