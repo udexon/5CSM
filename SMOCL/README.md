@@ -6,6 +6,8 @@ Here is my prototype for SMOCL (Stack Machine OpenCL) written in C:
 
 https://github.com/udexon/5CSM/blob/master/SMOCL/README.md
 
+
+
 ### Introduction
 
 SMOCL is derived from the Multitiered Stack Machine (nSM) as described in:
@@ -60,3 +62,5 @@ So the above is a long winded background to SMOCL. I believe it is necessary as 
 Here is a link which I believe is one of the most important reference for non-Forth programmers to understand Forth: a collection of Forth systems written in C:
 
 http://uwiki.strotmann.de/view/forth-implemented-in-cc
+
+Forth has such a long history that it would be unfair to say that a certain topic has not been documented. Yet some of the most important work and documentation predated the Internet. Although the number of programmers worldwide increased dramatically along with the growth the Internet and mobile phone usage, Forth popularity remained relatively low as younger programmers are seduced by "propaganda" accompanying the currently popular programming languages. In absolute terms, the number of Forth programmers worldwide might be increasing, as the older Forth programmers may not disappear so quickly, touch wood, we do not have sufficient statistics or mechanism to collect such statistics. 
