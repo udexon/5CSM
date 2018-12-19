@@ -134,3 +134,19 @@ However, as stated above, nSM has a different goal: to map 5GL functions (equiva
 Then some readers may ask: can that not be done in any of the C Forth? Perhaps, but I suspect additional data structure might hinder this objective.
 
 In short SMOCL/nSM is a compiler / interpreter to translate Forth-like (RPN) programs into native C functions.
+
+Currently, [SMOCL stack machine functions `f_*()`](https://github.com/udexon/5CSM/blob/master/SMOCL/smocl.c) (line 78) are invoked using plain C syntax, as the RPN parser is being developed:
+
+```int FD() // use f_noded
+{
+	headd=(struct f_node *) NULL;
+	f_display(headd);
+
+	union body i; i.i = 230;
+	headd=(struct f_node *) f_push(headd, &i, 0);
+	f_display(headd);
+
+	i.i = 5;
+	headd=(struct f_node *) f_push(headd, &i, 0);
+	f_display(headd);
+```
