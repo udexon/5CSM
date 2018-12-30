@@ -4,7 +4,7 @@ This example illustrate how Forth style colon definition can be used "rename" bl
 
 The original [post](https://groups.google.com/forum/#!topic/comp.lang.forth/cAZURahAnzg) appeared on comp.lang.forth newsgroup.
 
-The [following is the output](https://github.com/udexon/5CSM/blob/master/SMPG/o_blocks) of cparse.php (will be uploaded after clean-up), a C parser written in PHP. It uses one simple rule: look for '{' and '}' as start and end markers, output block label as B_startline_startcol_endline_endcol. The number following IN_IF is the nest level of the block.
+The [following is the output](https://github.com/udexon/5CSM/blob/master/SMPG/o_blocks) of cparse.php (will be uploaded after clean-up), a C parser written in PHP. It uses one simple rule: look for '{' and '}' as start and end markers, output block label as B_startline_startcol_endline_endcol. Each line starts with the line number, followed by the column number of either '{' or '}'. The number following IN_IF is the nest level of the block.
 
 The input example is taken from https://github.com/supernovaremnant/bazel-android-opencl/blob/master/opencl-info/opencl-info.cc
 
