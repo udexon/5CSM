@@ -1,4 +1,16 @@
-Stack Machine Parser Generator
+### Stack Machine Parser Generator
+
+This example illustrate how Forth style colon definition can be used "rename" blocks of code of high level programming langauge (e.g. C/C++), thus making it more legible, structured and manageable.
+
+The original (post)[https://groups.google.com/forum/#!topic/comp.lang.forth/cAZURahAnzg] appeared on comp.lang.forth newsgroup.
+
+The (following is the output)[https://github.com/udexon/5CSM/blob/master/SMPG/o_blocks] of cparse.php (will be uploaded after clean-up), a C parser written in PHP. It uses one simple rule: look for '{' and '}' as start and end markers, output block label as B_startline_startcol_endline_endcol.
+
+The input example is taken from https://github.com/supernovaremnant/bazel-android-opencl/blob/master/opencl-info/opencl-info.cc
+
+Even with such a simple example, it shows that the code can quickly grow intelligible, due to fundamental flaws in the design of high level programming languages.
+
+The next step for cparser.php will be to provide the Forth style colon definition to "rename" the block labels B_* -- to give a legible name, to give it more meaning, structure and make in more manageable.
 
 ```
 190 38 START_BLOCK IN_IF 0 int main(int argc, const char** argv) {
