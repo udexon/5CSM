@@ -16,9 +16,9 @@ The next step for cparser.php will be to provide the Forth style colon definitio
 
 In the following example, 
 
-S_*: simple statements ending with ;
-B_*: blocks
-C_*: conditions
+`S_*`: simple statements ending with ;
+`B_*`: blocks
+`C_*`: conditions
 The numbers following _ are line and column respectively.
 
 ```
