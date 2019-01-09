@@ -34,5 +34,5 @@ C_339_6  do B_317_3_338_0
 S_340_27 S_343_40 S_344_20 S_346_32 S_349_36 
 ```
 
-After parsing into 5GL, a 300 plus line C++ program look much more intelligible. One may use Forth style colon definition to represent blocks of S_* statements to make it more compact. These labels may be renamed using additional colon definitions.
+After parsing into 5GL, a 300 plus line C++ program looks much more intelligible. One may use Forth style colon definition to represent blocks of S_* statements to make it even more compact. These labels may be renamed using additional colon definitions.
 
