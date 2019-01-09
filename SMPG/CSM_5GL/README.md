@@ -37,3 +37,16 @@ S_340_27 S_343_40 S_344_20 S_346_32 S_349_36
 
 After parsing into 5GL, a 300 plus line C++ program looks much more intelligible. One may use Forth style colon definition to represent blocks of S_* statements to make it even more compact. These labels may be renamed using additional colon definitions.
 
+Let us continue with Forth style colon definition to give the statements and blocks more meaningful names:
+
+```
+: init_setup S_193_39 S_194_19 S_195_62 S_198_18 S_199_42 S_200_29 S_202_21 ;
+: get_platformid_fail C_203_3 ;
+: fail_message B_203_28_206_0 ;
+: get_platform_info B_206_7_296_0 ;
+: get_cpuinfo S_300_30 S_301_17 S_302_23 S_303_14 S_305_20 S_307_48 
+S_310_42 S_313_40 S_314_15 S_316_15 ;
+: eof_cpuinfo C_339_6 ;
+: cpu_stream B_317_3_338_0 ;
+: end_message ;
+```
