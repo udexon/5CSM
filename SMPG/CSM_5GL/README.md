@@ -10,7 +10,7 @@ The [following is the output](https://github.com/udexon/5CSM/blob/master/SMPG/o_
 
 The input example is taken from https://github.com/supernovaremnant/bazel-android-opencl/blob/master/opencl-info/opencl-info.cc
 
-Even with such a simple example, it shows that the code can quickly grow intelligible, due to fundamental flaws in the design of high level programming languages.
+Even with such a simple example, it shows that the code can quickly grow unintelligible, due to fundamental flaws in the design of high level programming languages.
 
 The next step for cparser.php will be to provide the Forth style colon definition to "rename" the block labels B_* -- to give a legible name, to give it more meaning, structure and make in more manageable.
 
