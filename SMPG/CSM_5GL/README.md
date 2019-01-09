@@ -65,3 +65,12 @@ eof_cpuinfo do cpu_stream
 end_message 
 ```
 
+
+Please note that the 5GL code above is not just cosmetic (informative) but actually "functional". They can be mapped back the original C/C++ source code, via the Forth style colon definition, as well as the initial "parse map" (comprising line and column numbers for Statements, Blocks and Conditions).
+
+Further, the reverse mapping to C/C++ source code can be used for two purposes:
+
+i. editing source code
+ii. executing sections of code in interpreter mode
+
+Both facilities are well established features of the Forth  programming environment. This can now be used in C/C++ as well as other similar high level programming languages.
