@@ -14,12 +14,12 @@ Even with such a simple example, it shows that the code can quickly grow unintel
 
 The next step for cparser.php will be to provide the Forth style colon definition to "rename" the block labels B_* -- to give a legible name, to give it more meaning, structure and make in more manageable.
 
-In the following example, 
+In the following example, which we call "parses map",
 
 - `S_*`: simple statements ending with ;
 - `B_*`: blocks
 - `C_*`: conditions
-- The numbers following _ are line and column respectively.
+- the numbers following _ are line and column respectively.
 
 ```
 S_193_39 S_194_19 S_195_62 S_198_18 S_199_42 S_200_29 S_202_21 
@@ -71,6 +71,7 @@ Please note that the 5GL code above is not just cosmetic (informative) but actua
 Further, the reverse mapping to C/C++ source code can be used for two purposes:
 
 i. editing source code
+
 ii. executing sections of code in interpreter mode
 
 Both facilities are well established features of the Forth  programming environment. This can now be used in C/C++ as well as other similar high level programming languages.
