@@ -1,6 +1,6 @@
 ### Stack Machine Parser Generator
 
-(2019-01-09 2000 MYT)
+(2019-01-09 2010 MYT)
 
 This example illustrate how Forth style colon definition can be used "rename" blocks of code of high level programming langauge (e.g. C/C++), thus making it more legible, structured and manageable.
 
