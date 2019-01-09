@@ -50,3 +50,18 @@ S_310_42 S_313_40 S_314_15 S_316_15 ;
 : cpu_stream B_317_3_338_0 ;
 : end_message ;
 ```
+Now the 5GL code can be rewritten as:
+
+```
+init_setup
+
+get_platformid_fail if fail_message 
+else get_platform_info 
+
+get_cpuinfo 
+
+eof_cpuinfo do cpu_stream 
+
+end_message 
+```
+
