@@ -2,7 +2,7 @@
 
 (2019-01-09 2010 MYT)
 
-This example illustrate how Forth style colon definition can be used "rename" blocks of code of high level programming langauge (e.g. C/C++), thus making it more legible, structured and manageable.
+This example illustrates how Forth style colon definition can be used "rename" blocks of code of high level programming langauge (e.g. C/C++), thus making it more legible, structured and manageable.
 
 The original [post](https://groups.google.com/forum/#!topic/comp.lang.forth/cAZURahAnzg) appeared on comp.lang.forth newsgroup.
 
